@@ -1,5 +1,4 @@
 /**
- * author: jk
  * date: 2015-06-15 15:48:07
  * fork form: https://github.com/hotoo/detector
  * 用户客户端分析数据使用
