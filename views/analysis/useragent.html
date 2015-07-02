@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		UA分析平台
+	</title>
+	<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="analysis/index.js"></script>
+	
+	
+</head>
+<style type="text/css">
+	body{
+		width: 1100px;
+		margin: 0 auto;
+	}
+	h2{
+		text-align: center;
+	}
+</style>
+<body>
+
+
+<div class="container-fluid">
+	<h2>UA分析工具</h2>
+	<form class = "form-horizontal" enctype='multipart/form-data' method='post' action='javascript:;' role = "form" id = "frmUploadFile">
+	  <div class = "form-group">
+	    <label class = "control-label col-sm-1">上传选择</label>
+	    <div class = "col-sm-4">
+	      <input type = "file" name = "files" class = "form-control" id="J_Files" />
+	    </div>
+	  </div>
+	  <div class = "form-group">
+	    <div class = "col-sm-offset-1 col-sm-4">
+	      <button class = "btn btn-primary" id="file_upload">上传</button>
+	      <span class = "help-inline" id = "spanMessage">选择文件，并上传</span>
+	    </div>
+	  </div>
+	  <div class = "form-group J_analysis" style="display:none">
+	    <div class = "col-sm-offset-1 col-sm-4">
+	      <button id='J_analysis' class = 'btn btn-primary'>开始分析</button>
+	    </div>
+	  </div>
+	</form>
+
+</div>
+<ul>
+	<li>使用说明：</li>
+	<li>第一步：上传文件，由于中间件使用问题，仅支持xlsx（office 2007）格式，所以请注意文件格式转换，而且文件里面的数据只有一列，全部为ua数据</li>
+	<li>第二步：上传成功之后，请点击分析按钮</li>
+	<li>说明：文件上传之后，服务器不负责保存</li>
+	<li>TODO:
+		<ul>
+			<li>
+				支持xls格式的文件上传
+			</li>
+		</ul>
+	</li>
+</ul>
+
+</body>
+</html>
