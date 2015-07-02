@@ -1,7 +1,7 @@
 # uaAnalysis
 
 
-uaAnalysis is a userAgent detector and it will be analysis the data by uploaded file.Currently supports '.xlsx' format files.
+uaAnalysis is a userAgent detector, it can be analyzed the data by uploaded file.Currently supports '.xlsx' format files.
 
 ### How to use
 
